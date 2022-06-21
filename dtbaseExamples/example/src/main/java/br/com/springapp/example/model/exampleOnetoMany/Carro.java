@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Entity(name = "Carro")
 @Table(name = "carro")
 public class Carro {
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Long id;
 
@@ -20,4 +20,8 @@ public class Carro {
 
     @ManyToOne
     private Marca marcaDoCarro;
+
+    public Carro(String nomeCarro) {
+        this.nomeCarro = nomeCarro;
+    }
 }

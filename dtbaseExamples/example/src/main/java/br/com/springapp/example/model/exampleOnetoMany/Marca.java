@@ -24,4 +24,8 @@ public class Marca {
 
     @OneToMany
     List<Carro> carros = new ArrayList<>();
+
+    public Marca(String nomeMarca) {
+        this.nomeMarca = nomeMarca;
+    }
 }
