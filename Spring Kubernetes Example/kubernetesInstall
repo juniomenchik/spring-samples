@@ -70,25 +70,29 @@
 		$minikube dashboard
 		
 		$minikube dashboard --url
+		
+		
+		#kompose vs compose
 
+	# Linux
+		$curl -L https://github.com/kubernetes/kompose/releases/download/v1.26.0/kompose-linux-amd64 -o kompose
+		$chmod +x kompose
+		$sudo mv ./kompose /usr/local/bin/kompose
 
+	#Hello World do Kubernetes
 
+	app.rb
 
+	Dockerfile
 
+	$docker build . -t juniomenchik/hello-world-kubernetes:0.1.0
 
+	$docker push juniomenchik/hello-world-kubernetes:0.1.0
 
+	dev-jr.yaml
 
+	$kubectl create -f dev-jr.yaml
 
+	$kubectl get pods
 
-
-
-
-
-
-
-
-
-
-
-
-
+	$kubectl logs --follow 

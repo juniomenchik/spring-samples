@@ -1,0 +1,32 @@
+services:
+
+  db:
+    image: mysql/mysql-server:latest
+    restart:  always
+    environment:
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_DATABASE: 'db'
+      MYSQL_USER: 'example_user'
+      MYSQL_PASSWORD: 'userpassword'
+    ports:
+      - 3306:3306
+      - 33060:33060
+
+  portainer:
+    image: portainer/portainer
+    ports:
+      - 9000:9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 9765:8080
+
+volumes:
+  portainer_data:
+    driver: local
