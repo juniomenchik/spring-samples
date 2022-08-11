@@ -48,7 +48,6 @@ services:
 
   jenkins:
     image: jenkins/jenkins:lts
-    container_name: jenkins-server
     privileged: true
     hostname: jenkinsserver
     user: root
