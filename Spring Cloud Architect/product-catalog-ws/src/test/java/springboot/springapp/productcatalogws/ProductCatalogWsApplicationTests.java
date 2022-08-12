@@ -1,10 +1,10 @@
-package br.com.aincrad.productcatalog;
+package springboot.springapp.productcatalogws;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ProductCatalogApplicationTests {
+class ProductCatalogWsApplicationTests {
 
 	@Test
 	void contextLoads() {
