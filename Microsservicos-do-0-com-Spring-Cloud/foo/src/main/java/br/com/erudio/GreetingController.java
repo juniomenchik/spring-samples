@@ -13,7 +13,7 @@ public class GreetingController {
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
 
-    @RequestMapping("/sum/numberOne/numberTwo")
+    @RequestMapping("/sum/{numberOne}/{numberTwo}")
     public Double sum(@PathVariable(value = "numberOne") String numberOne, @PathVariable(value = "numberTwo") String numberTwo) throws Exception {
 
         if(!isNumeric(numberOne) || !isNumeric(numberTwo)){
@@ -33,6 +33,6 @@ public class GreetingController {
     private boolean isNumeric(String strNumber) {
         if (strNumber == null) return false;
         String number = strNumber.replaceAll(",",".");
-        return number.matches("[-+]?[0-9]*\\\\.?[0-9]+");
+        return number.matches("[-+]?[0-9]*\\.?[0-9]+");
     }
 }
