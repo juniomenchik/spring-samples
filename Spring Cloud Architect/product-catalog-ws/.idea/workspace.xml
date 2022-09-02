@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f5e3c3-be87-4944-9fe0-532c388cfd64" name="Changes" comment="" />
+    <list default="true" id="71f5e3c3-be87-4944-9fe0-532c388cfd64" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Microsservicos-do-0-com-Spring-Cloud/foo/src/main/java/br/com/erudio/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microsservicos-do-0-com-Spring-Cloud/foo/src/main/java/br/com/erudio/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microsservicos-do-0-com-Spring-Cloud/foo/src/main/java/br/com/erudio/exception/UnsuportedMathOperationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microsservicos-do-0-com-Spring-Cloud/foo/src/main/java/br/com/erudio/exception/UnsuportedMathOperationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microsservicos-do-0-com-Spring-Cloud/foo/src/main/java/br/com/erudio/exception/handler/CustomizedResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microsservicos-do-0-com-Spring-Cloud/foo/src/main/java/br/com/erudio/exception/handler/CustomizedResponseEntityExceptionHandler.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,6 +140,7 @@
       <workItem from="1660864369279" duration="81000" />
       <workItem from="1661355789583" duration="2717000" />
       <workItem from="1661516475399" duration="1374000" />
+      <workItem from="1662123169614" duration="10000" />
     </task>
     <servers />
   </component>

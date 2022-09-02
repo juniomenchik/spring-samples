@@ -24,6 +24,10 @@ public class GreetingController {
         return sum;
     }
 
+
+
+
+
     private Double convertToDouble(String strNumber) {
         if (strNumber == null) return 0D;
         String number = strNumber.replaceAll(",",".");
