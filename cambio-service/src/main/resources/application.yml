@@ -1,6 +1,6 @@
 spring:
   application:
-    name: greeting-service
+    name: cambio-service
   config:
     import: optional:configserver:http://localhost:8888/
   cloud:
@@ -9,11 +9,4 @@ spring:
       name: ${spring.application.name}
 
 server:
-  port: 8080
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-          - '*'
+  port: 8000

@@ -1,0 +1,13 @@
+GET http://localhost:8888/actuator
+Accept: application/json
+###
+
+GET http://localhost:8888/greeting-service/application-dev/default
+Accept: application/json
+###
+GET http://localhost:8888/application-qa/default
+Accept: application/json
+###
+GET http://localhost:8888/application-prod/default
+Accept: application/json
+###

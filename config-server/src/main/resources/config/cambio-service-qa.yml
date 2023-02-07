@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: cambio-service
+
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://docker-mysql:3306/cambio_service_qa
+    username: cambio_service_user
+    password: userpassword
+  jpa:
+    hibernate.ddl-auto: update
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
