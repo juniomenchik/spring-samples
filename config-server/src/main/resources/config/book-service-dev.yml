@@ -1,19 +1,19 @@
 spring:
   application:
-    name: cambio-service
+    name: book-service
 
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/cambio_service_dev?useTimezone=true&serverTimezone=UTC
-    username: cambio_service_user
+    url: jdbc:mysql://localhost:3306/book_service_dev?useTimezone=true&serverTimezone=UTC
+    username: book_service_user
     password: userpassword
   jpa:
     hibernate.ddl-auto: update
     show-sql: true
   flyway:
     url: jdbc:mysql://localhost:3306/
-    schemas: cambio_service_dev
-    user: cambio_service_user
+    schemas: book_service_dev
+    user: book_service_user
     password: userpassword
 
 management:

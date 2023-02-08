@@ -1,19 +1,12 @@
 spring:
   application:
-    name: greeting-service
+    name: book-service
   config:
     import: optional:configserver:http://localhost:8888/
   cloud:
     config:
-      profile: prod
+      profile: dev
       name: ${spring.application.name}
 
 server:
-  port: 8080
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-          - '*'
+  port: 8100

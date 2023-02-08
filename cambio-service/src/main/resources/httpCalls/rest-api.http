@@ -2,6 +2,6 @@ GET http://localhost:8000/actuator
 Accept: application/json
 ###
 
-GET http://localhost:8000/cambio-service/10/USD/BRL
+GET http://localhost:8000/cambio-service/2/USD/BRL
 Accept: application/json
 ###
