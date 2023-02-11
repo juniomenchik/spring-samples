@@ -34,43 +34,20 @@ public class BookController {
             @PathVariable("id") Long id,
             @PathVariable("currency") String currency
     ){
+
+        var localPort = env.getProperty("local.server.port");
         Optional<Book> book = repository.findById(id);
         if (book.isEmpty()) throw new RuntimeException("Book not found");
-        book.get().setEnvironment(env.getProperty("local.server.port").concat(" By FeignClient"));
+
 
         Cambio resProxy = cambioProxyFeign.getCambio(book.get().getPrice(),"USD",currency);
+
+        book.get().setEnvironment("Porta do book-service chamado -> " + localPort + "Porta do cambio-service chamado -> "+resProxy.getEnvironment());
 
         book.get().setPrice(resProxy.getConvertedValue());
         book.get().setCurrency(currency);
 
         return book.get();
     }
-
-
-//    @GetMapping(value = "/{id}/{currency}")
-//    public Book findBook(
-//            @PathVariable("id") Long id,
-//            @PathVariable("currency") String currency
-//    ){
-//        Optional<Book> book = repository.findById(id);
-//        if (book.isEmpty()) throw new RuntimeException("Book not found");
-//        book.get().setEnvironment(env.getProperty("local.server.port"));
-//
-//        HashMap<String,String>params = new HashMap<>();
-//
-//        params.put("amount",book.get().getPrice().toString());
-//        params.put("from","USD");
-//        params.put("to",currency);
-//
-//        var response = new RestTemplate()
-//                .getForEntity("http://localhost:8000/cambio-service/{amount}/{from}/{to}",
-//                Cambio.class,
-//                params);
-//
-//        book.get().setPrice(Objects.requireNonNull(response.getBody()).getConvertedValue());
-//        book.get().setCurrency(currency);
-//
-//        return book.get();
-//    }
 
 }

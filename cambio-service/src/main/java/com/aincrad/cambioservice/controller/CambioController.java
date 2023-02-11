@@ -36,7 +36,6 @@ public class CambioController {
         BigDecimal convertedValue = conversionFactor.multiply(amount);
         cambio.setConvertedValue(convertedValue.setScale(2, RoundingMode.CEILING));
 
-
         return cambio;
     }
 
