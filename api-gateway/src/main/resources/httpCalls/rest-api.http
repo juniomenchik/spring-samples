@@ -1,0 +1,7 @@
+GET http://localhost:8765/actuator
+Accept: application/json
+###
+
+GET http://localhost:8765/book-service/1/EUR
+Accept: application/json
+###
