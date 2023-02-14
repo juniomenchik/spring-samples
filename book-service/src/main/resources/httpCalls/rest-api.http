@@ -5,3 +5,7 @@ Accept: application/json
 GET http://localhost:8100/book-service/1/EUR
 Accept: application/json
 ###
+
+GET http://localhost:8100/book-service/foo-bar
+Accept: application/json
+###
