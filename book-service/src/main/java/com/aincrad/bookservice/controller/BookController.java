@@ -42,7 +42,7 @@ public class BookController {
 
         Cambio resProxy = cambioProxyFeign.getCambio(book.get().getPrice(),"USD",currency);
 
-        book.get().setEnvironment("Porta do book-service chamado -> " + localPort + "Porta do cambio-service chamado -> "+resProxy.getEnvironment());
+        book.get().setEnvironment("book-service port: " + localPort + " cambio-service port: "+resProxy.getEnvironment());
 
         book.get().setPrice(resProxy.getConvertedValue());
         book.get().setCurrency(currency);

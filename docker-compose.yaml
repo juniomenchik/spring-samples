@@ -1,31 +1,31 @@
-version: "3"
-
-services:
-  eureka-server:
-    build: ./eureka-server
-    ports:
-      - "8761:8761"
-    networks:
-      - one-net
-
-  config-server:
-    build: ./config-server
-    depends_on:
-      - eureka-server
-    ports:
-      - "8888:8888"
-    networks:
-      - one-net
-
-  greeting-service:
-    build: ./greeting-service
-    depends_on:
-      - eureka-server
-      - config-server
-    ports:
-      - "8080:8080"
-    networks:
-      - one-net
-
-networks:
-    one-net:
+#version: "3"
+#
+#services:
+#  eureka-server:
+#    build: ./eureka-server
+#    ports:
+#      - "8761:8761"
+#    networks:
+#      - one-net
+#
+#  config-server:
+#    build: ./config-server
+#    depends_on:
+#      - eureka-server
+#    ports:
+#      - "8888:8888"
+#    networks:
+#      - one-net
+#
+#  greeting-service:
+#    build: ./greeting-service
+#    depends_on:
+#      - eureka-server
+#      - config-server
+#    ports:
+#      - "8080:8080"
+#    networks:
+#      - one-net
+#
+#networks:
+#    one-net:
