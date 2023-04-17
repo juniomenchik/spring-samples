@@ -1,10 +1,8 @@
-package HelloClasses;
-
-import ExternalServices.ColorToRGB;
-import ExternalServices.RgbToColor;
+package Servidor.ServiceImpl;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import Cliente.ServiceInterfaces.MethodsInterfaceCalculator;
 
 public class ServiceImplementationCalculator extends UnicastRemoteObject implements MethodsInterfaceCalculator {
     public ServiceImplementationCalculator() throws RemoteException {

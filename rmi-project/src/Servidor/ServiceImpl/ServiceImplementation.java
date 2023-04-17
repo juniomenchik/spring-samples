@@ -1,12 +1,11 @@
-package HelloClasses;
+package Servidor.ServiceImpl;
 
-import ExternalServices.ColorToRGB;
-import ExternalServices.RgbToColor;
+import Servidor.ServiceImpl.ExternalServices.ColorToRGB;
+import Servidor.ServiceImpl.ExternalServices.RgbToColor;
+import Cliente.ServiceInterfaces.MethodsInterface;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
-import java.time.LocalDateTime;
-import java.util.Date;
 
 public class ServiceImplementation extends UnicastRemoteObject implements MethodsInterface {
     public ServiceImplementation() throws RemoteException {

@@ -1,7 +1,8 @@
-package HelloClasses;
+package Servidor.ServiceImpl;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import Cliente.ServiceInterfaces.MethodsInterfaceManipulacaoDeStrings;
 
 public class ServiceImplementationManipulacaoDeStrings extends UnicastRemoteObject implements MethodsInterfaceManipulacaoDeStrings {
     public ServiceImplementationManipulacaoDeStrings() throws RemoteException {

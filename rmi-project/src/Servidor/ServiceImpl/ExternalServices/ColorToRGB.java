@@ -1,4 +1,4 @@
-package ExternalServices;
+package Servidor.ServiceImpl.ExternalServices;
 
 public class ColorToRGB {
     public static String colorToRGB(String resp) {

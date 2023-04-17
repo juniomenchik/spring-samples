@@ -1,8 +1,9 @@
 package Servidor;
 
-import HelloClasses.ServiceImplementation;
-import HelloClasses.ServiceImplementationCalculator;
-import HelloClasses.ServiceImplementationManipulacaoDeStrings;
+import Servidor.ServiceImpl.ServiceImplementation;
+import Servidor.ServiceImpl.ServiceImplementationBoringChat;
+import Servidor.ServiceImpl.ServiceImplementationCalculator;
+import Servidor.ServiceImpl.ServiceImplementationManipulacaoDeStrings;
 
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
@@ -14,5 +15,6 @@ public class ApplicationServer {
       registry.rebind("service", new ServiceImplementation());
       registry.rebind("calculator", new ServiceImplementationCalculator());
       registry.rebind("string_manipulator", new ServiceImplementationManipulacaoDeStrings());
+      registry.rebind("chat",new ServiceImplementationBoringChat());
     }
 }

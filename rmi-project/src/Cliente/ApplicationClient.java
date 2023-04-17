@@ -2,13 +2,7 @@ package Cliente;
 
 
 
-import HelloClasses.MethodsInterfaceCalculator;
-import HelloClasses.MethodsInterfaceManipulacaoDeStrings;
-import HelloClasses.OrganizeService;
-import HelloClasses.MethodsInterface;
-
 import java.net.MalformedURLException;
-import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.util.Scanner;
@@ -26,6 +20,7 @@ public class ApplicationClient {
            System.out.println("2 - Servico conversor Color/RGB");
            System.out.println("3 - Servico Calculadora");
            System.out.println("4 - Servico Manipulacao de Strings");
+           System.out.println("5 - Servico de Chat Simples");
            System.out.println("0 - Sair");
            String choose = scanner.nextLine();
 
@@ -46,6 +41,10 @@ public class ApplicationClient {
                case "4" -> {
                    System.out.println("Opcao Selecionada: 4 - Manipulacao de Strings");
                    organizeService.manipulacaoDeStrings(serviceApps);
+               }
+               case "5" -> {
+                   System.out.println("Opcao Selecionada: 5 - Servico de Chat Simples");
+                   organizeService.chatSimples(serviceApps);
                }
                case "0" -> System.exit(0);
                default -> System.out.println("Opcao invalida");

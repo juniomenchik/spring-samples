@@ -1,4 +1,4 @@
-package HelloClasses;
+package Cliente;
 
 import java.rmi.RemoteException;
 import java.util.Scanner;
@@ -96,6 +96,20 @@ public class OrganizeService {
             }
             case "0" -> System.out.println("Voltando");
             default -> System.out.println("Opcao invalida");
+        }
+    }
+
+    public void chatSimples(ServiceApps serviceApps) throws RemoteException {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("1 - Mandar mensagem ao Servidor");
+        System.out.println("0 - Voltar");
+        String choose = scanner.nextLine();
+        switch (choose) {
+            case "1" -> {
+                System.out.println("Opcao Selecionada: 1, Digite a mensagem que gostaria de enviar ao Servidor");
+                String resp1 = scanner.nextLine();
+                System.out.println("Server MANUAL Response: " + serviceApps.getServiceBoringChat().sendMsg(resp1));
+            }
         }
     }
 }
