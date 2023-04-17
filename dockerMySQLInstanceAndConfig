@@ -13,7 +13,7 @@ docker stop docker-mysql
 
 // CASO QUEIRA ACESSAR O MYSQL PELO PROMPT DE COMANDO
 
-$docker exec -it docker-mysql mysql -uroot -proot
+$sudo docker exec -it docker-mysql mysql -uroot -proot
 
 PARA CRIAR O DATABASE
 mysql> create database example_mysql;
