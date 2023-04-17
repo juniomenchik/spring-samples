@@ -6,16 +6,23 @@ import java.rmi.server.UnicastRemoteObject;
 public class ServiceImplementationManipulacaoDeStrings extends UnicastRemoteObject implements MethodsInterfaceManipulacaoDeStrings {
     public ServiceImplementationManipulacaoDeStrings() throws RemoteException {
         super();
+        System.out.println("ServiceImplementationManipulacaoDeStrings created");
     }
-    public String concat(String a, String b) throws RemoteException {
+    public String concatenacaoDeDuasStrings(String a, String b) throws RemoteException {
+        System.out.println("ServiceImplementationManipulacaoDeStrings received: " + a + " and " + b);
         String str = a + b;
+        System.out.println("ServiceImplementationManipulacaoDeStrings returned: " + str);
         return str;
     }
-    public Boolean contains(String a, String b) throws RemoteException {
+    public Boolean containsStringAemB(String a, String b) throws RemoteException {
+        System.out.println("ServiceImplementationManipulacaoDeStrings received: " + a + " and " + b);
+        System.out.println("ServiceImplementationManipulacaoDeStrings returned: " + a.contains(b));
         return a.contains(b);
     }
-    public String remove(String a, String b) throws RemoteException {
+    public String removeStringAFromBorReturnB(String a, String b) throws RemoteException {
+        System.out.println("ServiceImplementationManipulacaoDeStrings received: " + a + " and " + b);
         String str = a.contains(b) ? a.replace(b, "") : b;
+        System.out.println("ServiceImplementationManipulacaoDeStrings returned: " + str);
         return str;
     }
 }
