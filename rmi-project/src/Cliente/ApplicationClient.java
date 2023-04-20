@@ -8,7 +8,6 @@ import java.rmi.RemoteException;
 import java.util.Scanner;
 
 public class ApplicationClient {
-
     static OrganizeService organizeService = new OrganizeService();
     public static void main(String[] args) throws MalformedURLException, NotBoundException, RemoteException {
        ServiceApps serviceApps = new ServiceApps();
@@ -35,8 +34,8 @@ public class ApplicationClient {
                    organizeService.conversorColorRGB(serviceApps);
                }
                case "3" -> {
-                     System.out.println("Opcao Selecionada: 3 - Servico Calculadora");
-                     organizeService.calculadora(serviceApps);
+                   System.out.println("Opcao Selecionada: 3 - Servico Calculadora");
+                   organizeService.calculadora(serviceApps);
                }
                case "4" -> {
                    System.out.println("Opcao Selecionada: 4 - Manipulacao de Strings");
