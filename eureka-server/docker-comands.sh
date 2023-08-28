@@ -1,5 +1,5 @@
  docker container rm eureka-server
- mvn clean package -DskipTestso
+ mvn clean package -DskipTests
  docker build -t eureka-server:0.0.1 .
  docker tag eureka-server:0.0.1 juniomenchik/eureka-server:0.0.1
  docker images

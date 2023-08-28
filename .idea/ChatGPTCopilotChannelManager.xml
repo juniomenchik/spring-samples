@@ -12,70 +12,26 @@
       <chatChannel>
         <option name="model" value="gpt-3.5-turbo" />
         <option name="name" value="Our chat's topic is up to you! As an AI language model, I'm here to assist with any questions, topics, or concerns you might have. So, feel free to ask me anything or start a conversation on any topic you like." />
+        <option name="messages" />
+      </chatChannel>
+      <chatChannel>
+        <option name="model" value="gpt-3.5-turbo" />
+        <option name="name" value="Assistant" />
+        <option name="roleModel">
+          <RoleModel>
+            <name>Assistant</name>
+            <messages>
+              <Message>
+                <option name="content" value="A comprehensive and accurate assistant" />
+                <option name="role" value="system" />
+              </Message>
+            </messages>
+          </RoleModel>
+        </option>
         <option name="messages">
           <Message>
-            <option name="content" value="ola tudo bem" />
-            <option name="role" value="user" />
-          </Message>
-          <Message>
-            <option name="content" value="Olá! Sim, estou bem. Como posso ajudá-lo?" />
-            <option name="role" value="assistant" />
-          </Message>
-          <Message>
-            <option name="content" value="quem construi a primeira bomba atomica" />
-            <option name="role" value="user" />
-          </Message>
-          <Message>
-            <option name="content" value="A primeira bomba atômica foi construída por cientistas do Projeto Manhattan, liderado pelo físico americano J. Robert Oppenheimer." />
-            <option name="role" value="assistant" />
-          </Message>
-          <Message>
-            <option name="content" value="nao foram os chineses?" />
-            <option name="role" value="user" />
-          </Message>
-          <Message>
-            <option name="content" value="Não, os chineses não foram os primeiros a construir a bomba atômica. Embora a China tenha desenvolvido seu próprio programa nuclear e testado sua primeira arma nuclear em 1964, a primeira bomba atômica foi construída pelos Estados Unidos durante a Segunda Guerra Mundial, como parte do Projeto Manhattan. O programa tinha como objetivo desenvolver uma arma que pudesse ser usada contra o Japão no fim da guerra." />
-            <option name="role" value="assistant" />
-          </Message>
-          <Message>
-            <option name="content" value="quando" />
-            <option name="role" value="user" />
-          </Message>
-          <Message>
-            <option name="content" value="A primeira bomba atômica, chamada &quot;Little Boy&quot;, foi detonada em 6 de agosto de 1945 sobre a cidade de Hiroshima, no Japão. Três dias depois, em 9 de agosto de 1945, uma segunda bomba atômica, chamada &quot;Fat Man&quot;, foi lançada sobre a cidade de Nagasaki, também no Japão. Esses dois bombardeios atômicos mataram mais de 200.000 pessoas e foram um dos eventos mais devastadores da história." />
-            <option name="role" value="assistant" />
-          </Message>
-          <Message>
-            <option name="content" value="quais todas as descobertas  dos chineses" />
-            <option name="role" value="user" />
-          </Message>
-          <Message>
-            <option name="content" value="Os chineses fizeram muitas descobertas ao longo da história, algumas das quais incluem:&#10;&#10;- Papel: os chineses foram os primeiros a desenvolver o papel no século II a.C.&#10;- Bússola: a invenção da bússola magnética no século II d.C. ajudou na navegação e no comércio.&#10;- Pólvora: a pólvora foi inventada na China no século IX e teve muitos usos, desde fogos de artifício até armas de fogo.&#10;- Impressão: a impressão com tipos móveis foi criada na China no século XI.&#10;- Seda: a seda foi um produto amplamente comercializado pelos chineses desde o século III a.C.&#10;- Porcelana: a porcelana, um tipo de cerâmica de alta qualidade, foi desenvolvida pelos chineses no século VII.&#10;- Abacus: um dispositivo de cálculo conhecido como ábaco foi usado pelos chineses por mais de 2000 anos. &#10;&#10;Essas são apenas algumas das muitas invenções e descobertas que os chineses fizeram ao longo da história." />
-            <option name="role" value="assistant" />
-          </Message>
-          <Message>
-            <option name="content" value="da pra dizer que a china se desenvolveu apenas por causa dos estados unidos?" />
-            <option name="role" value="user" />
-          </Message>
-          <Message>
-            <option name="content" value="Não se pode dizer que a China se desenvolveu apenas por causa dos Estados Unidos, embora a relação entre os dois países tenha tido um grande impacto na economia chinesa. Desde os anos 1970, quando os dois países se aproximaram, os Estados Unidos se tornaram um dos maiores parceiros comerciais da China e muitas empresas americanas estabeleceram operações na China para aproveitar a mão de obra barata.&#10;&#10;No entanto, o desenvolvimento da China também se deve a muitos outros fatores, incluindo as reformas econômicas iniciadas pelo líder chinês Deng Xiaoping nos anos 1980, a expansão do comércio internacional e da globalização, e os investimentos em infraestrutura e tecnologia feitos pelo governo chinês. Além disso, a grande população, o mercado consumidor em expansão e o modelo de desenvolvimento do governo chinês também contribuíram para o crescimento econômico do país." />
-            <option name="role" value="assistant" />
-          </Message>
-          <Message>
-            <option name="content" value="como era determinado o valor de uma mercadoria para mises" />
-            <option name="role" value="user" />
-          </Message>
-          <Message>
-            <option name="content" value="Para Ludwig von Mises, um economista austríaco do século XX, o valor de uma mercadoria era determinado pela sua utilidade marginal e não pelo custo de produção, como na teoria do valor-trabalho de Karl Marx. &#10;&#10;Segundo Mises, os indivíduos valorizam as coisas de acordo com a satisfação que essas coisas lhes proporcionam e a quantidade de coisas semelhantes que já possuem (ou seja, a utilidade marginal). Por exemplo, uma pessoa pode estar disposta a pagar muito dinheiro por uma garrafa de água em um dia quente, mas pode não estar disposta a pagar o mesmo valor em um dia frio, porque a utilidade marginal da água é maior no primeiro caso do que no segundo.&#10;&#10;Mises também afirmava que o processo de troca entre indivíduos (o mercado) é uma forma de descoberta de preços, em que os preços são determinados pela oferta e demanda, e que os indivíduos fazem escolhas racionais com base nesses preços. Em outras palavras, o valor das mercadorias depende da sua utilidade para o consumidor e dos preços que as pessoas estão dispostas a pagar por elas no mercado." />
-            <option name="role" value="assistant" />
-          </Message>
-          <Message>
-            <option name="content" value="mises apoiava o uso de propriedade individual para aluguel ?" />
-            <option name="role" value="user" />
-          </Message>
-          <Message>
-            <option name="content" value="Sim, Ludwig von Mises defendia o direito à propriedade individual e ao livre mercado, nos quais o aluguel de propriedades seria um elemento fundamental.&#10;&#10;Mises acreditava que a propriedade privada era um direito fundamental e que ela podia ser usada para gerar renda através do aluguel. Em um contexto de livre mercado, onde as transações entre indivíduos são voluntárias e não há interferência externa, Mises argumentou que o aluguel é uma forma legítima de propriedade e que sua prática não deve ser interferida pelo governo.&#10;&#10;Em sua teoria, Mises considerava que o mercado livre de aluguéis é uma condição necessária para o crescimento econômico e para a eficiência na alocação de recursos. Ele argumentava que, em um mercado competitivo, os preços dos aluguéis seriam determinados pela oferta e demanda, permitindo que os proprietários e os inquilinos chegassem a um acordo voluntário que beneficie a ambos." />
-            <option name="role" value="assistant" />
+            <option name="content" value="A comprehensive and accurate assistant" />
+            <option name="role" value="system" />
           </Message>
         </option>
       </chatChannel>

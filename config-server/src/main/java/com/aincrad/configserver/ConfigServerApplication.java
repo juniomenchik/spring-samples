@@ -9,6 +9,8 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 public class ConfigServerApplication {
 
 	public static void main(String[] args) {
+		var hostName = System.getenv("HOSTNAME");
+		System.out.println("HOSTNAME: " + hostName);
 		SpringApplication.run(ConfigServerApplication.class, args);
 	}
 
