@@ -29,3 +29,11 @@ services:
 
 networks:
     one-net:
+      
+#docker run -p 9411:9411 openzipkin/zipkin:2.23.2
+#http://127.0.0.1:9411/zipkin/
+
+#docker run -p 8000:8000 -p 8088:8088 -e "SPLUNK_PASSWORD=J2u3n4i5o6r7@a" -e "SPLUNK_START_ARGS=--accept-license" -it splunk/splunk:latest
+#docker network create --driver bridge --attachable skynet
+
+#docker run --network skynet --name so1 --hostname so1 -p 8000:8000 -e "SPLUNK_PASSWORD=<password>" -e "SPLUNK_START_ARGS=--accept-license" -it splunk/splunk:latest

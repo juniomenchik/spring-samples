@@ -17,6 +17,11 @@
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="splunk-artifactory" />
+      <option name="name" value="Splunk Releases" />
+      <option name="url" value="https://splunk.jfrog.io/artifactory/libs-releases" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="netflix-candidates" />
       <option name="name" value="Netflix Candidates" />
       <option name="url" value="https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates" />
