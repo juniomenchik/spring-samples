@@ -16,13 +16,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="api-gateway" target="17" />
-      <module name="book-service" target="17" />
-      <module name="cambio-service" target="17" />
-      <module name="config-server" target="17" />
-      <module name="eureka-server" target="17" />
       <module name="example" target="11" />
-      <module name="greeting-service" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
