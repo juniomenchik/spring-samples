@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+//made by jeff
 public class LexicalAnalyzer {
     // Defina os tokens da linguagem
     private static Set<String> tipoDados = new HashSet<>();
