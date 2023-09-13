@@ -1,8 +1,0 @@
-para ver a branch no terminal ubuntu
-
-sudo nano ~/.bashrc 
-
-final do arquivo adicionar este codigo
-
-export PS1='\u@\h\[\033[01;34m\] \w\[\033[0;32m\]$(__git_ps1 " (%s)")\[\033[01;34m\]$\[\033[00m\]'
-
