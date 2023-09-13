@@ -24,16 +24,3 @@ grant all on book_service_dev.* to 'book_service_user'@'%';
 create database cambio_service_dev;
 create user 'cambio_service_user'@'%' identified by 'userpassword';
 grant all on cambio_service_dev.* to 'cambio_service_user'@'%';
-
-
-
-
-
-
-
-
-
-
-
-
-
