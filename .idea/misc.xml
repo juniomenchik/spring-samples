@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/kotlin-app" />
+    <file type="web" url="file://$PROJECT_DIR$/Udemy-Course-KotlinRestToAws/kotlin-app" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -14,6 +15,7 @@
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/greeting-service/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring home/Projects/3 - Spring Data/1 - Spring Data JDBC/spring-jdbc/spring-jdbc/pom.xml" />
       </list>
     </option>
   </component>
