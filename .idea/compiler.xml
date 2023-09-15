@@ -7,7 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-jdbc" />
+        <module name="spring-kube" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -15,9 +15,13 @@
       <module name="book-service" target="17" />
       <module name="cambio-service" target="17" />
       <module name="config-server" target="17" />
+      <module name="demo" target="17" />
+      <module name="demo.main" target="17" />
+      <module name="demo.test" target="17" />
       <module name="eureka-server" target="17" />
       <module name="example" target="11" />
       <module name="greeting-service" target="17" />
+      <module name="spring-jdbc" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -30,6 +34,7 @@
       <module name="example" options="-parameters" />
       <module name="greeting-service" options="-parameters" />
       <module name="spring-jdbc" options="-parameters" />
+      <module name="spring-kube" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: spring-kube-test
+  name: spring-kube-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-kube-test
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: spring-kube-test
+    spec:
+      containers:
+      - image: juniomenchik/spring-kube-test
+        name: spring-kube-test
+        resources: {}
+        livenessProbe:
+          initialDelaySeconds: 300
+          periodSeconds: 30
+          httpGet:
+            path: /actuator/health/liveness
+            port: 8080
+        readinessProbe:
+          initialDelaySeconds: 300
+          periodSeconds: 30
+          httpGet:
+            path: /actuator/health/readiness
+            port: 8080
+        lifecycle:
+          preStop:
+            exec:
+              command: [ "sh", "-c", "sleep 10" ]
+        volumeMounts:
+          - name: config-volume
+            mountPath: /workspace/config
+      volumes:
+        - name: config-volume
+          configMap:
+            name: spring-kube-test
+status: {}
