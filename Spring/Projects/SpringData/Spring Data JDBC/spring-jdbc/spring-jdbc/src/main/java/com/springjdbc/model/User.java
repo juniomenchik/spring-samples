@@ -25,4 +25,10 @@ public class User {
     @Column(length = 100, nullable = false)
     private String password;
 
+    //toString Json
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", name=" + name + ", email=" + email + ", password=" + password + '}';
+    }
+
 }
