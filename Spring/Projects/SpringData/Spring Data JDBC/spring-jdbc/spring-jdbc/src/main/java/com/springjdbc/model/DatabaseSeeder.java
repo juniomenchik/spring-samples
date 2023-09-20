@@ -11,14 +11,8 @@ public class DatabaseSeeder {
     @Autowired
     private JdbcTemplate jdbcTemplate;
     public void insertData() {
-
-
-        jdbcTemplate.execute("DROP TABLE IF EXISTS person_table");
-        jdbcTemplate.execute("CREATE TABLE person_table(id SERIAL, first_name VARCHAR(255), last_name VARCHAR(255))");
-
-        jdbcTemplate.execute("INSERT INTO person_table(first_name,last_name) VALUES('Victor', 'Hugo')");
-        jdbcTemplate.execute("INSERT INTO person_table(first_name,last_name) VALUES('Dante', 'Alighieri')");
-        jdbcTemplate.execute("INSERT INTO person_table(first_name,last_name) VALUES('Stefan', 'Zweig')");
-        jdbcTemplate.execute("INSERT INTO person_table(first_name,last_name) VALUES('Oscar', 'Wilde')");
+        //criar um usuario
+        jdbcTemplate.execute("CREATE TABLE IF NOT EXISTS tb_user (id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(75) NOT NULL, email VARCHAR(75) NOT NULL UNIQUE, password VARCHAR(100) NOT NULL)");
+        jdbcTemplate.execute("INSERT INTO tb_user (name, email, password) VALUES ('Jeff Menchik', 'jeff@email.com','11112000')");
     }
 }
