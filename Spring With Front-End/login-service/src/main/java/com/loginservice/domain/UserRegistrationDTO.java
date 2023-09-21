@@ -1,4 +1,4 @@
-package com.aincrad.registrationlogin.domain;
+package com.loginservice.domain;
 
 public class UserRegistrationDTO {
     private String firstName;
@@ -32,4 +32,13 @@ public class UserRegistrationDTO {
         return password;
     }
 
+    @Override
+    public String toString() {
+        return "UserRegistrationDTO{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }

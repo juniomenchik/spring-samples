@@ -1,19 +1,11 @@
 spring:
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
     show-sql: true
-    # = Thymeleaf configurations
-    #==================================
-  thymeleaf:
 
-    prefix: classpath:/templates/
   datasource:
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_example
     username: springuser
     password: ThePassword
     driver-class-name: com.mysql.cj.jdbc.Driver
-logging:
-  level:
-    sql: debug
-    type: trace

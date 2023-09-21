@@ -1,15 +1,15 @@
-package com.aincrad.registrationlogin.services;
-
-import com.aincrad.registrationlogin.domain.Role;
-import com.aincrad.registrationlogin.domain.RoleRepository;
-import com.aincrad.registrationlogin.domain.User;
-import com.aincrad.registrationlogin.domain.UserRegistrationDTO;
-import com.aincrad.registrationlogin.domain.UserRepository;
-import com.aincrad.registrationlogin.services.interfaces.IUserService;
-import org.springframework.stereotype.Service;
+package com.loginservice.services;
 
 import java.util.ArrayList;
 import java.util.Collection;
+
+import com.loginservice.domain.Role;
+import com.loginservice.domain.RoleRepository;
+import com.loginservice.domain.User;
+import com.loginservice.domain.UserRegistrationDTO;
+import com.loginservice.domain.UserRepository;
+import com.loginservice.services.interfaces.IUserService;
+import org.springframework.stereotype.Service;
 
 @Service
 public class UserServiceImpl implements IUserService {

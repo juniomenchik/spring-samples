@@ -1,4 +1,4 @@
-package com.aincrad.registrationlogin.domain;
+package com.loginservice.domain;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
