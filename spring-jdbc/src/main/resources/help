@@ -30,3 +30,5 @@ spring:
     username: springuser
     password: ThePassword
     driver-class-name: com.mysql.cj.jdbc.Driver
+ 
+ 
