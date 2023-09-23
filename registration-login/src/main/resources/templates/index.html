@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- create navigation bar ( header ) -->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Create HTML registration form -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <!-- sucess message -->
+                <div th:if="${param.sucess}">
+                    <div class="alert alert-info"> Voce se registrou com sucesso no nosso App! </div>
+                </div>
+
+                <h1>Registration</h1>
+
+                <form th:action="@{/registration}" method="post" th:object = "${user}">
+                    <div class = "form-group">
+                        <label class="control-label" for="firstName">First Name:</label>
+                        <input id="firstName" class="form-control" th:field="*{firstName}" type="text" placeholder="First Name" required autofocus="autofocus" />
+                    </div>
+                    <div class = "form-group">
+                        <label class="control-label" for="lastName">Last Name:</label>
+                        <input id="lastName" class="form-control" th:field="*{lastName}" type="text" placeholder="Last Name" required autofocus="autofocus" />
+                    </div>
+                    <div class = "form-group">
+                        <label class="control-label" for="email">Email:</label>
+                        <input id="email" class="form-control" th:field="*{email}" type="text" placeholder="user@email.com" required autofocus="autofocus" />
+                    </div>
+                    <div class = "form-group">
+                        <label class="control-label" for="email">Password:</label>
+                        <input id="password" class="form-control" type = "password" th:field="*{password}" type="text" placeholder="********" required autofocus="autofocus" />
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success">Register</button>
+                        <span>Already registered? <a href="/" th:href="">Login here</a></span>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
