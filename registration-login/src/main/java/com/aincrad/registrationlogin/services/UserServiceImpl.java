@@ -1,33 +1,39 @@
 package com.aincrad.registrationlogin.services;
 
 import com.aincrad.registrationlogin.domain.Role;
+import com.aincrad.registrationlogin.domain.RoleRepository;
 import com.aincrad.registrationlogin.domain.User;
 import com.aincrad.registrationlogin.domain.UserRegistrationDTO;
 import com.aincrad.registrationlogin.domain.UserRepository;
 import com.aincrad.registrationlogin.services.interfaces.IUserService;
-import com.aincrad.registrationlogin.util.exceptions.BusinessException;
 import org.springframework.stereotype.Service;
 
-import java.lang.reflect.Array;
-import java.util.List;
-import java.util.Optional;
+import java.util.ArrayList;
+import java.util.Collection;
 
 @Service
 public class UserServiceImpl implements IUserService {
 
+    private final UserRepository userRepository;
+    private final RoleRepository roleRepository;
 
-    private UserRepository userRepository;
-
-    public UserServiceImpl(UserRepository userRepository) {
+    public UserServiceImpl(UserRepository userRepository,RoleRepository roleRepository) {
         super();
         this.userRepository = userRepository;
+        this.roleRepository = roleRepository;
     }
     @Override
     public User save(UserRegistrationDTO registrationDTO) {
-        User user = new User(registrationDTO.getFirstName(),
+        Collection<Role> roles = new ArrayList<>();
+        roles.add(roleRepository.findByName("ROLE_USER"));
+        User user = new User(
+                registrationDTO.getFirstName(),
                 registrationDTO.getLastName(),
-                registrationDTO.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        getEmail(),
+                registrationDTO.getEmail(),
                 registrationDTO.getPassword(),
-                (new Role("ROLE_USER")));
+                roles
+                );
+
+        return userRepository.save(user);
     }
 }

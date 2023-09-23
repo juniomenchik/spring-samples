@@ -19,4 +19,11 @@ public class CaixaProduto implements ProdutoCompositeProtocol {
                 .mapToInt(ProdutoCompositeProtocol::getPrice)
                 .sum();
     }
+
+    @Override
+    public String toString() {
+        return "CaixaProduto{" +
+                "refeicoes=" + refeicoes +
+                '}';
+    }
 }
