@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-kube (1)" />
+        <module name="spring-kube" />
         <module name="spring-kube (2)" />
         <module name="spring-jdbc" />
         <module name="spring-kafka" />
@@ -27,7 +28,6 @@
       <module name="kotlin-app" target="17" />
       <module name="kotlin-app.main" target="17" />
       <module name="kotlin-app.test" target="17" />
-      <module name="spring-kube" target="17" />
       <module name="spring-kube (1)" target="1.5" />
       <module name="spring-kube (2)" target="17" />
     </bytecodeTargetLevel>
