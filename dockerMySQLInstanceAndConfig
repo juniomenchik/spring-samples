@@ -13,6 +13,10 @@ docker stop docker-mysql
 // CASO QUEIRA ACESSAR O MYSQL PELO PROMPT DE COMANDO
 $sudo docker exec -it docker-mysql mysql -uroot -proot
 
+create database db_example;
+create user 'springuser'@'%' identified by 'ThePassword';
+grant all on db_example.* to 'springuser'@'%';
+
 create database example_mysql;
 create user 'example_user'@'%' identified by 'userpassword';
 grant all on example_mysql.* to 'example_user'@'%';

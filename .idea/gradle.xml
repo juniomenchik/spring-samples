@@ -4,11 +4,18 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Spring/Projects/SpringKubernetes" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Spring/Projects/SpringKubernetes" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/kotlin-app" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/kotlin-app" />
           </set>
         </option>
       </GradleProjectSettings>

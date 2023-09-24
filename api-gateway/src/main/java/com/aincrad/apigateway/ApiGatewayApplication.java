@@ -7,8 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ApiGatewayApplication {
 
 	public static void main(String[] args) {
-		var hostName = System.getenv("HOSTNAME");
-		System.out.println("HOSTNAME: " + hostName);
 		SpringApplication.run(ApiGatewayApplication.class, args);
 	}
 

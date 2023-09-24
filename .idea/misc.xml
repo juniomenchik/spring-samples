@@ -1,8 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/kotlin-app" />
-    <file type="web" url="file://$PROJECT_DIR$/Udemy-Course-KotlinRestToAws/kotlin-app" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -19,6 +19,14 @@
         <option value="$PROJECT_DIR$/Spring/Projects/spring-kube/pom.xml" />
         <option value="$PROJECT_DIR$/Spring/Projects/SpringKafka/spring-kafka/pom.xml" />
         <option value="$PROJECT_DIR$/Spring/Projects/SpringData/Spring Data JDBC/spring-jdbc/spring-jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/login-service/pom.xml" />
+        <option value="$PROJECT_DIR$/registration-login/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-kube/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-rabbitmq-tutorial/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-react/pom.xml" />
       </list>
     </option>
   </component>

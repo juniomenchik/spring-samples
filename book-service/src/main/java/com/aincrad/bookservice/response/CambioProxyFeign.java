@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface CambioProxyFeign {
 
     @GetMapping( value = "/cambio-service/{amount}/{from}/{to}")
-    public Cambio getCambio(
+    Cambio getCambio(
             @PathVariable("amount") Double amount,
             @PathVariable("from") String from,
             @PathVariable("to") String to

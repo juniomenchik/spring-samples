@@ -7,25 +7,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-jdbc" />
+        <module name="login-service" />
+        <module name="spring-kube" />
+        <module name="book-service" />
         <module name="spring-kafka" />
+        <module name="eureka-server" />
+        <module name="config-server" />
+        <module name="greeting-service" />
+        <module name="registration-login" />
+        <module name="spring-jdbc" />
+        <module name="api-gateway" />
+        <module name="spring-boot" />
+        <module name="spring-react" />
+        <module name="spring-rabbitmq-tutorial" />
+        <module name="cambio-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="api-gateway" target="17" />
-      <module name="book-service" target="17" />
-      <module name="cambio-service" target="17" />
       <module name="com.aincrad.kotlin-app" target="17" />
       <module name="com.aincrad.kotlin-app.main" target="17" />
-      <module name="config-server" target="17" />
+      <module name="com.aincrad.kotlin-app.test" target="17" />
       <module name="demo" target="17" />
       <module name="demo.main" target="17" />
       <module name="demo.test" target="17" />
-      <module name="eureka-server" target="17" />
       <module name="example" target="11" />
-      <module name="greeting-service" target="17" />
-      <module name="kotlin-app" target="17" />
-      <module name="spring-kube" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -37,8 +42,14 @@
       <module name="eureka-server" options="-parameters" />
       <module name="example" options="-parameters" />
       <module name="greeting-service" options="-parameters" />
-      <module name="spring-jdbc" options="" />
-      <module name="spring-kube" options="" />
+      <module name="login-service" options="-parameters" />
+      <module name="registration-login" options="-parameters" />
+      <module name="spring-boot" options="-parameters" />
+      <module name="spring-jdbc" options="-parameters" />
+      <module name="spring-kafka" options="-parameters" />
+      <module name="spring-kube" options="-parameters" />
+      <module name="spring-rabbitmq-tutorial" options="-parameters" />
+      <module name="spring-react" options="-parameters" />
     </option>
   </component>
 </project>
