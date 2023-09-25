@@ -14,7 +14,18 @@ management:
       enabled: true
     readinessState:
       enabled: true
+
 spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_example
+    username: springuser
+    password: ThePassword
+    driver-class-name: com.mysql.cj.jdbc.Driver
   kafka:
     producer:
       bootstrap-servers: localhost:9092

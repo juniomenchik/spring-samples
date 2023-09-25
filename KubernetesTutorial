@@ -1,0 +1,25 @@
+Start your cluster
+    $minikube start
+
+Interact with your cluster
+    $kubectl get po -A
+
+Kubernetes Dashboard
+    $minikube dashboard
+
+Need to have a docker image
+    ./Dockerfile <-- deve ter.
+    $docker build -t {imagename}:0.0.1 .
+    $docker tag {imagename}:0.0.1 juniomenchik/{imagename}:0.0.1
+    $docker images
+    $docker push juniomenchik/{imagename}:0.0.1
+
+This command create a deployment and no need to pass configuration
+    $kubectl create deployment {imagename} --image=juniomenchik/{imagename}:0.0.1
+    // Expose the deployment
+    $kubectl expose deployment {imagename} --type=NodePort --port=8080
+Show the Deployment
+    $kubectl get services {imagename}
+
+Para Atualizar algum deployment
+    $kubectl apply -f [filename]

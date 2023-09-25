@@ -2,8 +2,9 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: spring-kube-test
-  name: spring-kube-test
+    app: spring-kafka
+  name: spring-kafka
+  namespace: kafka
 spec:
   ports:
   - name: 80-8080
@@ -11,5 +12,6 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
-    app: spring-kube-test
+    app: spring-kafka
   type: LoadBalancer
+# kubectl apply -f 07-service.yaml

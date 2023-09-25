@@ -2,22 +2,23 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: spring-kube-test
-  name: spring-kube-test
+    app: spring-kafka
+  name: spring-kafka
+  namespace: kafka
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: spring-kube-test
+      app: spring-kafka
   strategy: {}
   template:
     metadata:
       labels:
-        app: spring-kube-test
+        app: spring-kafka
     spec:
       containers:
-      - image: juniomenchik/spring-kube-test
-        name: spring-kube-test
+      - image: juniomenchik/spring-kafka:0.0.1
+        name: spring-kafka
         resources: {}
         livenessProbe:
           initialDelaySeconds: 300
@@ -35,3 +36,4 @@ spec:
           preStop:
             exec:
               command: [ "sh", "-c", "sleep 10" ]
+# kubectl apply -f 06-deployment.yaml
