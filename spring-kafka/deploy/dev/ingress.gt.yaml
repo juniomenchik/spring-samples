@@ -1,0 +1,31 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: aincrad
+  name: spring-kafka
+spec:
+  tls:
+    - hosts:
+        - host-kafka
+      secretName: host-kafka
+  rules:
+    - host: host-kafka.gt
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: spring-kafka
+                port:
+                  number: 80
+    - host: host-kafka
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: spring-kafka
+                port:
+                  number: 80

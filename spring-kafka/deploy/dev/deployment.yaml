@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: aincrad
+  name: spring-kafka
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-kafka
+  template:
+    metadata:
+      labels:
+        app: spring-kafka
+    spec:
+      containers:
+        - name: spring-kafka
+          image: juniomenchik/spring-kafka:0.0.1
+          imagePullPolicy: Always
+          envFrom:
+            - configMapRef:
+                name: spring-kafka-envs
+            - secretRef:
+                name: spring-kafka-envs
+          ports:
+            - name: http-port
+              containerPort: 58094
+              protocol: TCP
+          lifecycle:
+            preStop:
+              exec:
+                command: [ "sh", "-c", "sleep 10" ]
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: http-port
+            initialDelaySeconds: 240
+            periodSeconds: 30
+            timeoutSeconds: 5
+            failureThreshold: 5
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: http-port
+            initialDelaySeconds: 60
+            periodSeconds: 30
+            timeoutSeconds: 5
+            failureThreshold: 3

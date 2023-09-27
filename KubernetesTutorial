@@ -14,6 +14,7 @@ Need to have a docker image
     $docker images
     $docker push juniomenchik/{imagename}:0.0.1
 
+
 This command create a deployment and no need to pass configuration
     $kubectl create deployment {imagename} --image=juniomenchik/{imagename}:0.0.1
     // Expose the deployment
@@ -23,3 +24,14 @@ Show the Deployment
 
 Para Atualizar algum deployment
     $kubectl apply -f [filename]
+
+Minikube eh especifico para expor portas e servicos.
+    $minikube tunnel
+
+    $kubectl config get-contexts
+    $docker ps
+    $kind get clusters
+    $kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/kind/deploy.yaml
+
+    $kind create cluster --name=kayaba
+    $kind create cluster --name=kirito
