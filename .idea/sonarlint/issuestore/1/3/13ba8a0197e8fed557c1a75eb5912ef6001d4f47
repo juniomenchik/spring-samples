@@ -1,0 +1,11 @@
+
+c
+java:S2184"FCast one of the operands of this multiplication operation to a "long".(×¼À™8Ä¶®€¯1
+r	java:S116"QRename this field "MINUTO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»‚ü¤þÿÿÿÿ8Ê¶®€¯1
+n	java:S116"RRename this field "MINUTOS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¼À™8Ê¶®€¯1
+C
+java:S1170"!Make this final field static too.(»‚ü¤þÿÿÿÿ8Ê¶®€¯1
+>
+java:S1170"!Make this final field static too.(×¼À™8Ê¶®€¯1
+s
+java:S1450"VRemove the "MINUTOS" field and declare it as a local variable in the relevant methods.(×¼À™8Ë¶®€¯1

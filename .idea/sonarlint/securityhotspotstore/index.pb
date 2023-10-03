@@ -1,0 +1,25 @@
+
+u
+Etreinoredis/src/main/java/com/treinoredis/TreinoredisApplication.java,d/4/d46a15eeb7e33ad5559de90a548f60989f56c5dc
+s
+Ctreinoredis/src/main/java/com/treinoredis/config/Configuration.java,7/7/7777001caaa93301f54c46bd31a2448b1286feb0
+
+Otreinoredis/src/main/java/com/treinoredis/http/controller/ClientController.java,0/2/02ecc36ad6768eb2053faec03f4453406f005442
+O
+treinoredis/docker-composer.yml,2/2/2293f2082d6b483d2a06aaabc60e1e44d3deb9b9
+C
+treinoredis/pom.xml,c/0/c06130f50136be8fa3f0beacc8636a9890c77077
+
+Otreinoredis/src/main/java/com/treinoredis/repository/ClientRedisRepository.java,3/e/3e28b44f3d26312941fda38307167f3ff496509c
+†
+Vtreinoredis/src/main/java/com/treinoredis/http/controller/ClientRedisControllerV2.java,4/1/41e404bcba3bc51b7f59b5a373b3fbf6b41c0f99
+q
+Atreinoredis/src/main/java/com/treinoredis/entity/ClientRedis.java,3/4/34a61a31bc07fd46756e66a52946d6adcf42f19d
+t
+Dtreinoredis/src/main/java/com/treinoredis/service/ClientService.java,9/6/9630477085977bf81b16df510acd82b9e3393120
+y
+Itreinoredis/src/main/java/com/treinoredis/service/ClientRedisService.java,1/3/13ba8a0197e8fed557c1a75eb5912ef6001d4f47
+z
+Jtreinoredis/src/main/java/com/treinoredis/repository/ClientRepository.java,6/c/6c8c40e4ea76caeea66185cd93d65f646fc9aa3f
+l
+<treinoredis/src/main/java/com/treinoredis/entity/Client.java,8/c/8ca0a63ebe03461897dc67459b9e1649c97ef9c1

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
@@ -26,6 +27,7 @@
         <option value="$PROJECT_DIR$/spring-kube/pom.xml" />
         <option value="$PROJECT_DIR$/spring-rabbitmq-tutorial/pom.xml" />
         <option value="$PROJECT_DIR$/spring-react/pom.xml" />
+        <option value="$PROJECT_DIR$/treinoredis/pom.xml" />
       </list>
     </option>
   </component>

@@ -12,6 +12,11 @@
       <option name="url" value="https://repo.maven.apache.org/maven2/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="oss-releases" />
+      <option name="name" value="oss-releases" />
+      <option name="url" value="https://nexus.telefonica.com.br/repository/oss-releases/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="spring-milestones" />
       <option name="name" value="Spring Milestones" />
       <option name="url" value="https://repo.spring.io/milestone" />
@@ -40,6 +45,16 @@
       <option name="id" value="netflix-candidates" />
       <option name="name" value="Netflix Candidates" />
       <option name="url" value="https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="central" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="common-domain" />
+      <option name="name" value="common-domain" />
+      <option name="url" value="https://nexus.telefonica.com.br/repository/common-domain-mvn/" />
     </remote-repository>
   </component>
 </project>
