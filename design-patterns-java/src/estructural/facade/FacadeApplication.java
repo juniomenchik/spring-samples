@@ -1,7 +1,5 @@
 package estructural.facade;
 
-import creational.builder.interfaces.ProdutoBuilderProtocol;
-
 public class FacadeApplication {
     public static void main(String[] args) {
         FacadeBuilder facadeBuilder = new FacadeBuilder();

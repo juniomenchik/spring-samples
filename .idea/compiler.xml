@@ -48,7 +48,7 @@
       <module name="spring-boot" options="-parameters" />
       <module name="spring-jdbc" options="-parameters" />
       <module name="spring-kafka" options="-parameters" />
-      <module name="spring-kube" options="" />
+      <module name="spring-kube" options="-parameters" />
       <module name="spring-rabbitmq-tutorial" options="-parameters" />
       <module name="spring-react" options="-parameters" />
       <module name="treinoredis" options="-parameters" />
